@@ -2,7 +2,7 @@
 
 # CareCoder
 
-CareCoder is an AI-powered web application designed to aid in early medical diagnosis. Developed during the HackforImpact IIITD hackathon, our project leverages modern technologies to deliver real-time predictions for critical health conditions including brain tumors, breast cancer, pneumonia, and skin cancer.
+CareCoder is an AI-powered web application designed to aid in early medical diagnosis. Developed during the HackforImpact IIITD hackathon, our project leverages state-of-the-art AI models and modern web technologies to deliver real-time predictions for critical health conditions including brain tumors, breast cancer, pneumonia, and skin cancer.
 
 ---
 
@@ -11,6 +11,7 @@ CareCoder is an AI-powered web application designed to aid in early medical diag
 - [Overview](#overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Models](#models)
 - [Architecture](#architecture)
 - [Installation & Setup](#installation--setup)
 - [Usage](#usage)
@@ -21,7 +22,7 @@ CareCoder is an AI-powered web application designed to aid in early medical diag
 
 ## Overview
 
-CareCoder aims to empower both patients and medical professionals with rapid and accurate diagnostic insights. The application combines a responsive front-end built with React (powered by Vite) and Tailwind CSS with a robust Flask back-end. The solution demonstrates how machine learning models and modern web technologies can be integrated into a user-friendly interface to support early diagnosis and timely intervention.
+CareCoder aims to empower both patients and medical professionals with rapid and accurate diagnostic insights. The application combines a responsive front-end built with React and a robust back-end developed with Flask. Our solution showcases how advanced AI techniques can be integrated into a user-friendly interface to support early diagnosis and timely intervention.
 
 ---
 
@@ -31,33 +32,40 @@ CareCoder aims to empower both patients and medical professionals with rapid and
   Predictive modules for brain tumor, breast cancer, pneumonia, and skin cancer.
 
 - **Interactive UI:**  
-  A modern, responsive design that ensures smooth user experience on both desktop and mobile devices.
+  A modern, responsive design that ensures a smooth user experience on both desktop and mobile devices.
 
 - **Real-Time Feedback:**  
-  Instantaneous predictions and visualizations help users understand the potential outcomes.
+  Instantaneous predictions and visualizations help users understand potential outcomes.
 
 - **Data Visualization & Articles:**  
-  Latest articles and updates in the medical domain are integrated to keep users informed about health trends.
+  The platform keeps users informed with the latest articles and trends in the medical domain.
 
 - **Seamless Integration:**  
-  The project bridges the gap between a front-end interface and back-end processing, demonstrating an effective full-stack solution.
+  A clear division between front-end and back-end operations demonstrates an effective full-stack solution.
 
 ---
 
 ## Tech Stack
 
+- **AI Models:**  
+  - Vision Transformer Models (VIT)  
+  - Retrieval Augmented Generation (RAG)
+
 - **Front-End:**  
-  - React (with Vite for fast development)
-  - Tailwind CSS for styling
-  - JavaScript (ES6+)
+  - React
 
 - **Back-End:**  
-  - Flask (Python) for API development and ML model integration
+  - Flask
 
-- **Utilities:**  
-  - Axios for HTTP requests
-  - Framer Motion for animations
-  - Additional libraries for data visualization and interactive elements
+- **Cloud Database:**  
+  - MongoDB Atlas
+
+---
+
+## Models
+
+All the AI models used in this project can be downloaded from the following drive link:  
+[Download AI Models](https://drive.google.com/file/d/1bzpep_hQX5ZgwQUHm8yXnjD3flw6XbqT/view?usp=drive_link)
 
 ---
 
@@ -66,10 +74,10 @@ CareCoder aims to empower both patients and medical professionals with rapid and
 The project is structured into two primary parts:
 
 1. **CareCoder (Front-End):**  
-   Contains all the UI components, pages, and assets required to render the interactive application. Components such as `BrainTumorPrediction.jsx`, `BreastCancerPrediction.jsx`, and others illustrate modular design for each diagnostic feature.
+   Contains all the UI components, pages, and assets required to render the interactive application. The modular design is evident in components like `BrainTumorPrediction.jsx`, `BreastCancerPrediction.jsx`, and others, each dedicated to a specific diagnostic function.
 
 2. **Flask (Back-End):**  
-   Manages server-side logic, handling data processing, API endpoints, and interfacing with machine learning models that generate predictions based on user inputs.
+   Manages server-side logic by handling API endpoints and integrating AI models to generate predictions based on user inputs.
 
 ---
 
@@ -121,33 +129,32 @@ The project is structured into two primary parts:
 ## Usage
 
 - **User Interface:**  
-  The application is designed to be intuitive. Once the front-end is running, users can navigate to the prediction modules directly from the landing page. Each module guides the user through input requirements and displays the corresponding prediction.
+  The application is designed to be intuitive. Once the front-end is running, users can navigate directly to the prediction modules from the landing page. Each module guides the user through the necessary inputs and displays the corresponding prediction.
 
 - **API Interaction:**  
-  The front-end communicates with the Flask API to fetch predictions. Any data sent by the user is processed on the server and results are returned in real time.
+  The front-end communicates with the Flask API to fetch predictions. Any data provided by the user is processed on the server, and results are returned in real time.
 
 - **Testing:**  
-  Ensure that both the front-end and back-end servers are running simultaneously. You can use browser developer tools to inspect network requests and validate API responses.
+  Ensure that both the front-end and back-end servers are running simultaneously. Use browser developer tools to inspect network requests and validate API responses.
 
 ---
 
 ## Future Improvements
 
 - **Enhanced Model Accuracy:**  
-  Integrate more sophisticated machine learning models and fine-tune parameters to improve diagnostic accuracy.
+  Further refine AI models and experiment with additional architectures to boost diagnostic precision.
   
 - **User Authentication:**  
-  Implement user login and personalized dashboards to track health data over time.
+  Introduce user login and personalized dashboards to enable long-term tracking of health data.
 
-- **Expanded Health Coverage:**  
-  Extend predictive capabilities to cover additional health conditions based on user feedback and further research.
+- **Expanded Diagnostic Coverage:**  
+  Extend the predictive capabilities to cover more health conditions based on user feedback and new research.
 
 - **Accessibility & Localization:**  
-  Ensure the application is accessible to all users and offer multi-language support.
+  Enhance accessibility and provide multi-language support for a broader audience.
 
 ---
 
 ## Acknowledgements
 
-We would like to extend our gratitude to the HackforImpact IIITD hackathon organizers and judges for providing an inspiring platform to innovate and build impactful solutions. Special thanks to our mentors and peers for their invaluable guidance throughout the project.
-
+We extend our gratitude to the HackforImpact IIITD hackathon organizers and judges for providing an inspiring platform to innovate and build impactful solutions. Special thanks to our mentors and peers for their invaluable guidance throughout the project.
